@@ -16,14 +16,14 @@
 <body>
   <header>
     <div class="logo">
-      <img src="/images/logo.svg" alt="logo">
+      <img src="/images/logo.svg" alt="logo" class="disable-select">
     </div>
-    <div class="burger"></div>
+    <div class="burger disable-select"></div>
     <ul class="menu hidden">
       <li><a href="/">About</a></li>
       <li><a href="/">Services</a></li>
       <li><a href="/">Projects</a></li>
-      <li><a href="/">Contact</a></li>
+      <li class="contact"><a href="/">Contact</a></li>
     </ul>
     <div class="banner">
       <h1>We are creatives</h1>
@@ -31,92 +31,93 @@
     </div>
   </header>
   <main>
-    <div>
+    <section class="transform">
       <h2>
         Transform your brand
       </h2>
-      <p>
+      <p class="grey">
         We are a full-service creative agency specializing in helping brands grow fast.Engage your clients through
         compelling visuals that do most of the marketing for you.
       </p>
-      <a href="/">Learn more</a>
-      <div class="egg"></div>
-    </div>
-    <div>
-      <div class="glass"></div>
+      <a href="/" class="more_yellow">Learn more
+        <span class="yellow"></span>
+      </a>
+      <img src="/images/mobile/image-transform.jpg" alt="egg" class="egg">
+    </section>
+    <section class="stand_out">
+      <img src="/images/mobile/image-stand-out.jpg" alt="glass" class="glass">
       <h2>
         Stand out to the right audience
       </h2>
-      <p>
+      <p class="grey">
         Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll
         build
         and extend your brand in digital places.
       </p>
-      <a href="">Learn more</a>
-    </div>
-    <div>
-      <h2>
+      <a href="" class="more_red">Learn more<span class="red"></span></a>
+    </section>
+    <section class="graphic_design">
+      <h2 class="title green">
         Graphic design
       </h2>
-      <p>
+      <p class="text green">
         Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential
         clients’ attention.
       </p>
-    </div>
-    <div>
-      <h2>
+    </section>
+    <section class="photography">
+      <h2 class="title blue">
         Photography
       </h2>
-      <p>
+      <p class="text blue">
         Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
       </p>
-    </div>
-    <div>
+    </section>
+    <section class="clients">
       <h3>Client testimonials</h3>
-      <div>
-        <img src="/images/image-emily.jpg" alt="Emily R.">
-        <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always
-          hit.
-        </p>
-        <h4>Emily R.</h4>
-        <p>Marketing Director</p>
-      </div>
-      <div>
-        <img src="/images/image-thomas.jpg" alt="Thomas S.">
-        <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
-          enjoyable experience.</p>
-        <h4>Thomas S.</h4>
-        <p>Chief Operating Officer</p>
-      </div>
-      <div>
-        <img src="/images//image-jennie.jpg" alt="Jennie F.">
-        <p> Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
-        <h4>Jennie F.</h4>
-        <p>Business Owner</p>
-      </div>
-    </div>
+      <div class="clients_containter">
+        <div class="client_item">
+          <img src="/images/image-emily.jpg" alt="Emily R." class="photo">
+          <p class="grey">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines
+            were always
+            hit.
+          </p>
+          <h4>Emily R.</h4>
+          <p class="job">Marketing Director</p>
+        </div>
+        <div class="client_item">
+          <img src="/images/image-thomas.jpg" alt="Thomas S." class="photo">
+          <p class="grey">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a
+            satisfying and
+            enjoyable experience.</p>
+          <h4>Thomas S.</h4>
+          <p class="job">Chief Operating Officer</p>
+        </div>
+        <div class="client_item">
+          <img src="/images//image-jennie.jpg" alt="Jennie F." class="photo">
+          <p class="grey"> Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly
+            recommended!
+          </p>
+          <h4>Jennie F.</h4>
+          <p class="job">Business Owner</p>
+        </div>
+    </section>
     <div class="gallery">
-      <div>
-        <img src="/images/mobile/image-gallery-milkbottles.jpg" alt="milkbottles">
-      </div>
-      <div>
-        <img src="/images/mobile/image-gallery-orange.jpg" alt="orange">
-      </div>
-      <div>
-        <img src="/images/mobile/image-gallery-cone.jpg" alt="cone">
-      </div>
-      <div>
-        <img src="/images/mobile/image-gallery-sugar-cubes.jpg" alt="sugar-cubes">
-      </div>
+      <img src="/images/mobile/image-gallery-milkbottles.jpg" alt="milkbottles" class="gallery_img">
+      <img src="/images/mobile/image-gallery-orange.jpg" alt="orange" class="gallery_img">
+      <img src="/images/mobile/image-gallery-cone.jpg" alt="cone" class="gallery_img">
+      <img src="/images/mobile/image-gallery-sugar-cubes.jpg" alt="sugar-cubes" class="gallery_img">
+    </div>
     </div>
   </main>
   <footer>
-    <div class="footer_logo">
-    </div>
-    <ul clas="footer_menu">
-      <li><a href="/">About</a></li>
-      <li><a href="/">Services</a></li>
-      <li><a href="/">Projects</a></li>
+
+    <img src="./images/logo-green.svg" alt="logo" class="footer_logo disable-select">
+
+    <ul class="footer_menu">
+      <li class="footer_menu_item"><a href="/">About</a></li>
+      <li class="footer_menu_item"><a href="/">Services</a></li>
+      <li class="footer_menu_item"><a href="/">Projects</a></li>
     </ul>
     <ul class="socials">
       <li><a class="icon facebook" href="/">
@@ -133,6 +134,7 @@
         </a></li>
     </ul>
   </footer>
+  <script src="main.js"></script>
 </body>
 
 </html>
