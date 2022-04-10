@@ -10,21 +10,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/2eb05cc17c.js" crossorigin="anonymous"></script>
   <title>Sunnyside agency landing page</title>
 </head>
 
 <body>
   <header>
+
     <div class="logo">
       <img src="/images/logo.svg" alt="logo" class="disable-select">
+      <div class="burger disable-select"></div>
+      <ul class="menu hidden">
+        <li><a href="/">About</a></li>
+        <li><a href="/">Services</a></li>
+        <li><a href="/">Projects</a></li>
+        <li><a class="contact" href="/">Contact</a></li>
+      </ul>
     </div>
-    <div class="burger disable-select"></div>
-    <ul class="menu hidden">
-      <li><a href="/">About</a></li>
-      <li><a href="/">Services</a></li>
-      <li><a href="/">Projects</a></li>
-      <li class="contact"><a href="/">Contact</a></li>
-    </ul>
     <div class="banner">
       <h1>We are creatives</h1>
       <img src="/images/icon-arrow-down.svg" alt="arrow" class="arrow">
@@ -32,46 +34,49 @@
   </header>
   <main>
     <section class="transform">
-      <h2>
+      <h2 class="grid_h2">
         Transform your brand
       </h2>
-      <p class="grey">
+      <p class="grid_text grey">
         We are a full-service creative agency specializing in helping brands grow fast.Engage your clients through
         compelling visuals that do most of the marketing for you.
       </p>
-      <a href="/" class="more_yellow">Learn more
+      <a href="/" class="grid_more more_yellow">Learn more
         <span class="yellow"></span>
       </a>
-      <img src="/images/mobile/image-transform.jpg" alt="egg" class="egg">
+      <div class="img egg"></div>
     </section>
     <section class="stand_out">
-      <img src="/images/mobile/image-stand-out.jpg" alt="glass" class="glass">
-      <h2>
+      <div class="img glass"></div>
+      <h2 class="grid_h2">
         Stand out to the right audience
       </h2>
-      <p class="grey">
+      <p class="grid_text grey">
         Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll
         build
         and extend your brand in digital places.
       </p>
-      <a href="" class="more_red">Learn more<span class="red"></span></a>
+      <a href="" class="grid_more more_red">Learn more<span class="red"></span></a>
     </section>
-    <section class="graphic_design">
-      <h2 class="title green">
-        Graphic design
-      </h2>
-      <p class="text green">
-        Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential
-        clients’ attention.
-      </p>
-    </section>
-    <section class="photography">
-      <h2 class="title blue">
-        Photography
-      </h2>
-      <p class="text blue">
-        Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-      </p>
+    <section class="two_sections_containter">
+      <section class="graphic_design">
+        <h2 class="title green">
+          Graphic design
+        </h2>
+        <p class="text green">
+          Great design makes you memorable. We deliver artwork that underscores your brand message and captures
+          potential
+          clients’ attention.
+        </p>
+      </section>
+      <section class="photography">
+        <h2 class="title blue">
+          Photography
+        </h2>
+        <p class="text blue">
+          Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+        </p>
+      </section>
     </section>
     <section class="clients">
       <h3>Client testimonials</h3>
@@ -103,10 +108,14 @@
         </div>
     </section>
     <div class="gallery">
-      <img src="/images/mobile/image-gallery-milkbottles.jpg" alt="milkbottles" class="gallery_img">
+      <div class="gallery_img milkbottles"></div>
+      <div class="gallery_img orange"></div>
+      <div class="gallery_img cone"></div>
+      <div class="gallery_img sugar-cubes"></div>
+      <!-- <img src="/images/mobile/image-gallery-milkbottles.jpg" alt="milkbottles" class="gallery_img">
       <img src="/images/mobile/image-gallery-orange.jpg" alt="orange" class="gallery_img">
       <img src="/images/mobile/image-gallery-cone.jpg" alt="cone" class="gallery_img">
-      <img src="/images/mobile/image-gallery-sugar-cubes.jpg" alt="sugar-cubes" class="gallery_img">
+      <img src="/images/mobile/image-gallery-sugar-cubes.jpg" alt="sugar-cubes" class="gallery_img"> -->
     </div>
     </div>
   </main>
@@ -121,16 +130,16 @@
     </ul>
     <ul class="socials">
       <li><a class="icon facebook" href="/">
-          <img src="/images/icon-facebook.svg" alt="facebook">
+          <i class="fab fa-facebook-square green"></i>
         </a></li>
       <li><a class="icon instagram" href="/">
-          <img src="/images/icon-instagram.svg" alt="instagram">
+          <i class="fab fa-instagram green"></i>
         </a></li>
       <li><a class="icon twitter" href="/">
-          <img src="/images/icon-twitter.svg" alt="twitter">
+          <i class="fab fa-twitter green"></i>
         </a></li>
       <li><a class="icon pinterest" href="/">
-          <img src="/images/icon-pinterest.svg" alt="pinterest">
+          <i class="fab fa-pinterest green"></i>
         </a></li>
     </ul>
   </footer>

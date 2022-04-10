@@ -4,8 +4,13 @@
     box-sizing: border-box;
     font-family: 'Barlow', sans-serif;
     font-size: 18px;
-    /* font-family: 'Fraunces', serif; */
 }
+
+i {
+    font-size: 24px;
+}
+
+
 
 .disable-select,
 li {
@@ -55,7 +60,7 @@ a {
     top: 70px;
     width: 335px;
     height: 350px;
-    padding: 50px;
+    padding: 40px 50px 50px 70px;
     background-color: #fff;
     text-align: center;
     border-top: #3FBEFE solid 20px;
@@ -67,16 +72,16 @@ a {
     line-height: 55px;
 }
 
-.contact {
-    margin-top: 20px;
-    background-color: #FDD700;
-    border-radius: 27.5px;
-}
 
-.contact a {
+a.contact {
+    display: block;
     font-family: 'Fraunces', serif;
     color: black;
     text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 20px;
+    background-color: #FDD700;
+    border-radius: 27.5px;
 }
 
 .hidden {
@@ -103,8 +108,15 @@ h1 {
     flex-direction: column;
 }
 
+.img {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 375px;
+    height: 312px;
+}
+
 .egg {
-    width: 100%;
+    background-image: url(/images/mobile/image-transform.jpg);
     order: -1;
 }
 
@@ -156,7 +168,7 @@ p.grey {
 }
 
 .glass {
-    width: 100%;
+    background-image: url(/images/mobile/image-stand-out.jpg);
 }
 
 .more_red {
@@ -204,7 +216,7 @@ p.grey {
 }
 
 .green {
-    color: #0C5446;
+    color: #2C7566;
 }
 
 .photography {
@@ -256,7 +268,26 @@ h4 {
 }
 
 .gallery_img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 188px;
     width: 50%;
+}
+
+.milkbottles {
+    background-image: url(/images/mobile/image-gallery-milkbottles.jpg);
+}
+
+.orange {
+    background-image: url(/images/mobile/image-gallery-orange.jpg);
+}
+
+.cone {
+    background-image: url(/images/mobile/image-gallery-cone.jpg);
+}
+
+.sugar-cubes {
+    background-image: url(/images/mobile/image-gallery-sugar-cubes.jpg);
 }
 
 footer {
@@ -279,7 +310,264 @@ footer ul {
     text-align: center;
 }
 
+.footer_menu_item a {
+    color: #2C7566;
+
+}
+
 .socials {
     margin-top: 50px;
     width: 200px;
+}
+
+@media(min-width:1440px) {
+    body {
+        width: 1440px;
+    }
+
+    header {
+        padding: 20px;
+        background-image: url(/images/desktop/image-header.jpg);
+        height: 800px;
+    }
+
+    a {
+        color: #fff;
+    }
+
+    i:hover {
+        color: #fff;
+    }
+
+
+    .burger {
+        display: none;
+    }
+
+    .hidden {
+        display: block;
+    }
+
+    .logo {
+        padding: 20px 20px 0;
+        width: 100%;
+        height: 100px;
+    }
+
+    .logo img {
+        height: 24px;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        position: auto;
+        top: 0;
+        right: 0;
+        width: 500px;
+        height: auto;
+        padding: 20px;
+        background-color: transparent;
+        border: none;
+    }
+
+    .menu li {
+        margin: 0 10px;
+        display: inline-block;
+        font-size: 20px;
+        line-height: 55px;
+    }
+
+    a.contact {
+        display: block;
+        font-family: 'Fraunces', serif;
+        color: black;
+        text-transform: uppercase;
+        font-weight: 900;
+        margin: 0;
+        background-color: white;
+        border-radius: 27.5px;
+    }
+
+
+
+    .contact {
+        display: block;
+        margin-top: 0;
+        width: 150px;
+        background-color: #fff;
+        cursor: pointer;
+    }
+
+    .contact:hover {
+        background-color: #6ACFFF;
+    }
+
+    h1 {
+        font-size: 54px;
+        letter-spacing: 9px;
+    }
+
+    .arrow {
+        display: block;
+        margin: 80px auto
+    }
+
+    .transform {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 1fr 1fr;
+        grid-template-areas: "h2 img"
+            "text img"
+            "more img";
+    }
+
+    .img {
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 720px;
+        height: 600px;
+        grid-area: img;
+    }
+
+    .egg {
+        background-image: url(/images/desktop/image-transform.jpg);
+        order: 1;
+    }
+
+    .grid_h2 {
+        grid-area: h2;
+        margin: 130px 130px 20px;
+    }
+
+    p.grid_text {
+        grid-area: text;
+        margin: 0 130px;
+
+    }
+
+    a.grid_more {
+        grid-area: more;
+        width: 160px;
+        height: 30px;
+        margin: 0 0 0 130px;
+    }
+
+
+    h2 {
+        font-size: 48px;
+        text-align: left;
+    }
+
+    p.grey {
+        text-align: left;
+        line-height: 36px;
+    }
+
+    .stand_out {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 1fr 1fr;
+        grid-template-areas: "img h2"
+            "img text"
+            "img more";
+    }
+
+    .glass {
+        background-image: url(/images/desktop/image-stand-out.jpg);
+    }
+
+    .two_sections_containter {
+        display: flex;
+    }
+
+    .graphic_design {
+        width: 720px;
+        height: 600px;
+        background-image: url(images/desktop/image-graphic-design.jpg);
+        background-size: cover;
+    }
+
+    .title {
+        margin: 0 30px;
+        padding-top: 360px;
+        text-align: center;
+    }
+
+    .text {
+        padding: 40px 140px;
+        font-size: 18px;
+        letter-spacing: 1.2px;
+    }
+
+
+    .photography {
+        width: 720px;
+        height: 600px;
+        background-image: url(images/desktop/image-photography.jpg);
+        background-size: cover;
+    }
+
+    h3 {
+        margin: 0;
+        letter-spacing: 2.8px;
+        font-size: 24px;
+    }
+
+    .clients {
+        padding: 150px 100px 100px;
+    }
+
+    .clients_containter {
+        display: flex;
+    }
+
+    .client_item {
+        margin: 50px 20px;
+        text-align: center;
+    }
+
+    .client_item p {
+        text-align: center;
+        margin: 25px 0;
+    }
+
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .gallery_img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 447px;
+        width: 25%;
+    }
+
+    .milkbottles {
+        background-image: url(/images/desktop/image-gallery-milkbottles.jpg);
+    }
+
+    .orange {
+        background-image: url(/images/desktop/image-gallery-orange.jpg);
+    }
+
+    .cone {
+        background-image: url(/images/desktop/image-gallery-cone.jpg);
+    }
+
+    .sugar-cubes {
+        background-image: url(/images/desktop/image-gallery-sugarcubes.jpg);
+    }
+
+    footer ul {
+        width: 350px;
+
+    }
+
+    .footer_menu_item a:hover {
+        color: white;
+    }
+
 }
